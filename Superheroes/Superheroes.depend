@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1511881304 source:c:\users\thea\desktop\superheroes\main.cpp
+	"Superhero.h"
+
+1511881305 c:\users\thea\desktop\superheroes\include\superhero.h
+	<iostream>
+	<string>
+
+1511881396 source:c:\users\thea\desktop\superheroes\src\superhero.cpp
+	"Superhero.h"
+	<iostream>
+
