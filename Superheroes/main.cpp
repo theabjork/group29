@@ -1,15 +1,41 @@
+#include <iostream>
+#include <fstream>
 #include "Superhero.h"
+#include <string>
+using namespace std;
 
+int main(){
 
+    Superhero superhero;
+    ifstream fin;
+    ofstream fout;
+    char answer;
+    string text;
+    fout.open("textoutput.txt", ios::app);
+    fin.open("textoutput.txt");
 
-int main()
-{
+    if(!fout.eof()){
 
-//hér kemur: Útfærið forrit sem býður notanda upp á að skrá inn hetju og vista hana í skrá og
-//einnig að fá upp lista af þeim hetjum sem eru í skránni.
- cout << "Please enter the name, age and the superpower of the superhero: " << endl;
+         if(fout.is_open()){
+       do{
+        cin >> superhero;
+        fout << superhero;
+        cout << "Would you like to add another superhero?(y/n)" << endl;
+        cin >> answer;
+       }while(answer == 'y');
+    }
+    }
+    if(fin.is_open()){
+        while(!fin.eof()){
+            getline(fin, text);
+            cout << text << endl;
+        }
+        cout << endl << endl;
+        fin.eof();
 
-
+    }
+    fout.close();
+    fin.close();
 
     return 0;
 }

@@ -1,12 +1,18 @@
 # depslib dependency file v1.0
-1511881304 source:c:\users\thea\desktop\superheroes\main.cpp
-	"Superhero.h"
-
-1511881305 c:\users\thea\desktop\superheroes\include\superhero.h
+1512049886 source:c:\users\natal\desktop\verkl1\group29\superheroes\main.cpp
 	<iostream>
+	<fstream>
+	"Superhero.h"
 	<string>
 
-1511881396 source:c:\users\thea\desktop\superheroes\src\superhero.cpp
-	"Superhero.h"
+1512049886 c:\users\natal\desktop\verkl1\group29\superheroes\superhero.h
 	<iostream>
+	<fstream>
+	<string>
+
+1512049886 source:c:\users\natal\desktop\verkl1\group29\superheroes\superhero.cpp
+	<iostream>
+	<fstream>
+	"Superhero.h"
+	<string>
 
