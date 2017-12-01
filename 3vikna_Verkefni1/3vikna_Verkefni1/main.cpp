@@ -34,9 +34,9 @@ int main(){
     Superhero superhero;
     ofstream fout;
     
-    fout.open("textoutput.txt");
+    fout.open("textoutput2.txt");
     
-    fout << "blablabla" << endl;
+    fout << "lalalal" << endl;
     int i = 7;
     fout << i;
     

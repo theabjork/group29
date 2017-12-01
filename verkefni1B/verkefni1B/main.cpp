@@ -38,7 +38,7 @@ int main() {
             cout << "OPEN" << endl;
         }
         while(start == 1) {
-            getline(cin, text);
+            getline(fin, text);
             if(text == "\\"){
                 
                 break;
