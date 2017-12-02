@@ -15,7 +15,7 @@ Menu::Menu(){
     
 }
 void Menu::welcomeMessage(){
-    cout << "Welcome to FALL's Pizza" << endl;
+    cout << "Welcome to FALL's Pizza" << endl << endl;
 }
 void Menu::options(){
     cout << "-----------------" << endl;

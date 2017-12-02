@@ -10,12 +10,14 @@
 #include <iostream>
 #include <string>
 #include "mainMenu.hpp"
+#include "mainUI.hpp"
 using namespace std;
     
 int main(){
     Menu message;
+    MainUI userinterface;
     message.welcomeMessage();
-        
+    userinterface.startUI();
         
     return 0;
 }
