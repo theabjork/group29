@@ -1,4 +1,4 @@
-//
+
 //  main.cpp
 //  3vikna_Verkefni1
 //
