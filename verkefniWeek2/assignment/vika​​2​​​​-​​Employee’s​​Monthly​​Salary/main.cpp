@@ -1,4 +1,4 @@
-//
+/
 //  main.cpp
 //  vika​​2​​​​-​​Employee’s​​Monthly​​Salary
 //
