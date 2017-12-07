@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1512049886 source:c:\users\natal\desktop\verkl1\group29\superheroes\main.cpp
+	<iostream>
+	<fstream>
+	"Superhero.h"
+	<string>
+
+1512049886 c:\users\natal\desktop\verkl1\group29\superheroes\superhero.h
+	<iostream>
+	<fstream>
+	<string>
+
+1512049886 source:c:\users\natal\desktop\verkl1\group29\superheroes\superhero.cpp
+	<iostream>
+	<fstream>
+	"Superhero.h"
+	<string>
+
