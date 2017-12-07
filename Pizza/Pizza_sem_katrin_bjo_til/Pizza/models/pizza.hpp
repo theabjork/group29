@@ -12,18 +12,19 @@
 #include <stdio.h>
 #include <iostream>
 using namespace std;
+
 class Pizza{
     
 private:
-    Topping* _topping;
-    int _topping_count;
+    //Topping* _topping;
+    //int _topping_count;
     
 public:
     Pizza();
-    Pizza(int number_of_toppings);
-    void addTopping(Topping topping);
+    //Pizza(int number_of_toppings, char crust, int size);
+    //void addTopping(Topping topping);
     
-    ~Pizza();
+    //~Pizza();
     
     
     

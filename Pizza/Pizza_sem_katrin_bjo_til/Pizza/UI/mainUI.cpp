@@ -7,20 +7,19 @@
 //
 
 #include "mainUI.hpp"
+#include "SalesUI.hpp"
+#include "AdminUI.hpp"
 #include <iostream>
 #include <string>
 using namespace std;
 
 MainUI::MainUI(){
     
-    
 }
 
 void MainUI:: startUI(){
     
     char selection = '\0';
-    while(selection != 'q'){
-        
         cout << "Press a for Administration" << endl;
         cout << "Press s for Sales" << endl;
         cout << "Press p for Pizzaiolos" << endl;
@@ -30,10 +29,14 @@ void MainUI:: startUI(){
         cin >> selection;
         
         if(selection == 'a'){
-            
+            Admin admin;
+            cout << "Hello Administrator" << endl;
         }
         if(selection == 's'){
-            
+            Menu message;
+            message.welcomeMessage();
+            Menu opt;
+            opt.options();
         }
         if(selection == 'p'){
             
@@ -44,11 +47,6 @@ void MainUI:: startUI(){
         if(selection == 'q'){
             cout << endl;
         }
-    }
 }
-/*ostream& operator << (ostream& outs, MainUI& mainUI){
- outs << mainUI;
- 
- return outs;
- }*/
+
 

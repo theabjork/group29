@@ -16,12 +16,10 @@ using namespace std;
 class Topping{
     
 private:
-    char _name[32];
-    double _price;
+
     
 public:
     Topping();
-    Topping(char* name, double price);
     
     
     

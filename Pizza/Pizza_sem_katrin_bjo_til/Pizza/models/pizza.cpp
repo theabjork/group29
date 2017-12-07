@@ -13,11 +13,12 @@
 using namespace std;
 
 Pizza::Pizza(){
-    _topping_count = 0;
+   /* _topping_count = 0;
     _topping = NULL;
+    */
 }
 
-Pizza::Pizza(int number_of_toppings){
+/*Pizza::Pizza(int number_of_toppings, char crust, int size){
     _topping_count = number_of_toppings;
     _topping = new Topping[_topping_count];
     
@@ -34,4 +35,4 @@ Pizza::~Pizza(){
         delete[] _topping;
     }
 }
-
+*/

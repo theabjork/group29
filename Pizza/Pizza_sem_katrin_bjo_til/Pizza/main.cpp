@@ -1,18 +1,18 @@
 #include <iostream>
 #include <string>
-#include "mainMenu.hpp"
+#include "SalesUI.hpp"
 #include "mainUI.hpp"
 #include <fstream>
+#include "AdminUI.hpp"
 using namespace std;
     
 int main(){
     Menu message;
     MainUI userinterface;
-    message.welcomeMessage();
-    Menu opt;
-    opt.options();
+
     userinterface.startUI();
-  
+    
+    
         
     return 0;
 }
