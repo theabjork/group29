@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54496FA61FD9F23C008E7248 /* Exceptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54496FA41FD9F23C008E7248 /* Exceptions.cpp */; };
 		546897DD1FD1973800B9836F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546897DC1FD1973800B9836F /* main.cpp */; };
 		546897E51FD1987900B9836F /* SalesUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546897E31FD1987900B9836F /* SalesUI.cpp */; };
 		546B6F711FD201190087F316 /* mainUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546B6F6F1FD201190087F316 /* mainUI.cpp */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		54496FA41FD9F23C008E7248 /* Exceptions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Exceptions.cpp; sourceTree = "<group>"; };
+		54496FA51FD9F23C008E7248 /* Exceptions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exceptions.hpp; sourceTree = "<group>"; };
 		546897D91FD1973800B9836F /* Pizza */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pizza; sourceTree = BUILT_PRODUCTS_DIR; };
 		546897DC1FD1973800B9836F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		546897E31FD1987900B9836F /* SalesUI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SalesUI.cpp; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				546897DB1FD1973800B9836F /* Pizza */,
+				54496FA41FD9F23C008E7248 /* Exceptions.cpp */,
+				54496FA51FD9F23C008E7248 /* Exceptions.hpp */,
 				546897DA1FD1973800B9836F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,10 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				546897DC1FD1973800B9836F /* main.cpp */,
-				548098AB1FD880C3005F6D24 /* Repositories */,
-				5480989E1FD829CB005F6D24 /* services */,
-				5480989D1FD829A5005F6D24 /* UI */,
 				5480989C1FD82963005F6D24 /* models */,
+				5480989D1FD829A5005F6D24 /* UI */,
+				5480989E1FD829CB005F6D24 /* services */,
+				548098AB1FD880C3005F6D24 /* Repositories */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				548098A41FD86760005F6D24 /* AdminService.cpp in Sources */,
 				546B6F711FD201190087F316 /* mainUI.cpp in Sources */,
 				546B6F771FD224290087F316 /* topping.cpp in Sources */,
+				54496FA61FD9F23C008E7248 /* Exceptions.cpp in Sources */,
 				548098AA1FD880BD005F6D24 /* AdminRepository.cpp in Sources */,
 				548098A71FD87D4D005F6D24 /* AdminUI.cpp in Sources */,
 				546897DD1FD1973800B9836F /* main.cpp in Sources */,
