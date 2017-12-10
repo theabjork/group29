@@ -7,12 +7,16 @@
 //
 
 #include "userUI.hpp"
+#include "pizza.hpp"
+#include "Services.hpp"
 #include <iostream>
 using namespace std;
 
 void UserUI:: main_menu(){
     
     while(true){
+    
+    cout << "Welcome to FALL's Pizza" << endl << endl;
     char input = '\0';
     cout << "Press a for Administration" << endl;
     cout << "Press s for Sales" << endl;
@@ -29,15 +33,21 @@ void UserUI:: main_menu(){
 void UserUI::validate_user_input (char input){
     
     if(input == 'a'){
-        Admin admin;
+       
         cout << "Hello Administrator" << endl;
     }
-    if(selection == 's'){
-        Menu message;
+    if(input == 's'){
+        pizza_service.sales_options();
+        pizza_service.add_pizza(create_pizza());
+        
+        
+        
+        /*Menu message;
         message.welcomeMessage();
         Menu opt;
-        opt.options();
+        opt.options();*/
     }
+    /*
     if(selection == 'p'){
         
     }
@@ -46,5 +56,22 @@ void UserUI::validate_user_input (char input){
     }
     if(selection == 'q'){
         cout << endl;
-    }
+    } */
 }
+Pizza UserUI::create_pizza(){
+    int number_of_toppings, size;
+    char crust;
+    cout << "how many toppings?" << endl;
+    cin >> number_of_toppings;
+    cout << "what type of crust?" << endl;
+    cin >> crust;
+    cout << "what size?" << endl;
+    cin >> size;
+    
+    Pizza pizza(number_of_toppings, crust, size);
+    return pizza;
+}
+
+
+
+

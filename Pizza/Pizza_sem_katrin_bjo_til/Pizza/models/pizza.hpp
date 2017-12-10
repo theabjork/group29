@@ -16,16 +16,26 @@ using namespace std;
 class Pizza{
     
 private:
-    //Topping* _topping;
-    //int _topping_count;
+    int _number_of_toppings;
+    char _crust;
+    int _size;
     
+
 public:
     Pizza();
-    //Pizza(int number_of_toppings, char crust, int size);
+    Pizza(int number_of_toppings, char crust, int size);
+    int get_number_of_toppings() const ;
+    char get_crust() const ;
+    int get_size() const ;
+    void set_number_of_toppings(int number);
+    void set_crust(char crust);
+    void set_size(int size);
+   
+    friend ostream& operator << (ostream& in, const Pizza& pizza);
+    
     //void addTopping(Topping topping);
     
     //~Pizza();
-    
     
     
 };
