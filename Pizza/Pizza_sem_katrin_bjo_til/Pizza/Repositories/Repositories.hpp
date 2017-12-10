@@ -11,20 +11,20 @@
 #include "pizza.hpp"
 #include <fstream>
 #include <stdio.h>
-
+#include <vector>
 class Repositories{
   
 private:
-    vector<Pizza> the_menu(string menu);
-    
+    vector<Pizza> the_menu_vector(string menu);
+    vector<string> properties;
     
     
 public:
     void add_pizza(const Pizza& pizza);
     void the_menu();
-    
-    
-
+    void read_from_file();
+    void parseString(string line);
+    void validate_menu_input(char number);
 };
 
 

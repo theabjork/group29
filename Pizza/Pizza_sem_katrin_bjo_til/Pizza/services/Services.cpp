@@ -33,16 +33,25 @@ void Services::sales_validate_user_input(char input){
         Repositories sales_repo;
         sales_repo.the_menu();
         cout << "Choose a number from the menu?" << endl;
-        int number;
+        char number;
         cin >> number;
-        
-       
+        sales_menu_validate_input(number);
     }
     else {
         cout << endl;
     }
-}
     
+}
+void Services::sales_menu_validate_input(char number){
+   
+    Repositories menu_repo;
+    menu_repo.read_from_file();
+    if(number == '1'){
+        menu_repo.validate_menu_input(number);
+    }
+    
+}
+
     
     
     

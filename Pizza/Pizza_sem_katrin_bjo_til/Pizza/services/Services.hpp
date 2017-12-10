@@ -23,7 +23,7 @@ public:
     Repositories pizza_repo;
     void sales_options();
     void sales_validate_user_input(char input);
-    
+    void sales_menu_validate_input(char number);
     
     
     

@@ -8,10 +8,9 @@
 
 #include "Repositories.hpp"
 #include <fstream>
-
 #include <string>
-
 using namespace std;
+
 void Repositories::add_pizza(const Pizza& pizza){
     ofstream fout;
     fout.open("pizza.txt", ios::app);
@@ -39,16 +38,43 @@ void Repositories:: the_menu(){
     }
     fin.close();
 }
-/*vector<Pizza> Repositories:: the_menu(string menu){
+
+void Repositories:: read_from_file(){
     
-        read_from_files();
-        for (int i = 0; i < allEmployees.size(); i++){
-            if (allEmployees[i].get_SSN() == SSN){
-                sameSSN.push_back(allEmployees[i]);
+    ifstream fin("the_computer_menu.txt");
+    if (fin.is_open()){
+        string line;
+        while(getline(fin, line)){
+            parseString(line);
+        }
+    }
+    else{
+        cout << "unable to read from file";
+    }
+}
+
+void Repositories:: parseString(string line){
+
+        string property = "";
+        vector<string> properties;
+        for(unsigned int i = 0; i < line.length(); i++){
+            if(line[i] == ','){
+                properties.push_back(property);
+                property = "";
+            }
+            else{
+                property += line[i];
             }
         }
-        
-        return sameSSN;
-    }
- */
     
+}
+
+void Repositories::validate_menu_input(char number){
+    vector<string> properties;
+    if(number == '1'){
+        cout << properties[1] << endl;
+    }
+    
+}
+
+
