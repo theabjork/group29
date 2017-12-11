@@ -24,15 +24,15 @@ Pizza:: Pizza(string name, int size, int price){
     this->size = size;
     this->price = price;
 }
-string Pizza ::get_name() const {
+string Pizza ::get_name() {
     
     return this->name;
 }
-int Pizza::get_size() const {
+int Pizza::get_size(){
     
     return this->size;
 }
-int Pizza::get_price() const {
+int Pizza::get_price() {
     
     return this->price;
 }
@@ -58,32 +58,14 @@ ostream& operator << (ostream& out, const Pizza& pizza){
     return out;
 }
 
-istream& operator >> (istream& in, const Pizza& pizza){
+istream& operator >> (istream& in, Pizza& pizza){
     cout << "Pizza: ";
-    in >> pizza.name << endl;
+    in >> pizza.name;
     cout << "Size: ";
-    in >> pizza.size << endl;
+    in >> pizza.size;
     cout << "Price: ";
-    in >> pizza.price << endl;
+    in >> pizza.price;
     
     return in;
 }
 
-
-
-
-
-
-//void Pizza::addTopping(Topping topping){
-    
-    
-/*
-}
-
-Pizza::~Pizza(){
-    
-    if(_topping != 0){
-        delete[] _topping;
-    }
-}
-*/

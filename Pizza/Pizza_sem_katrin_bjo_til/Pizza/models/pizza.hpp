@@ -8,7 +8,6 @@
 
 #ifndef newclass_hpp
 #define newclass_hpp
-#include "topping.hpp"
 #include <stdio.h>
 #include <iostream>
 using namespace std;
@@ -24,20 +23,15 @@ private:
 public:
     Pizza();
     Pizza(string name, int size, int price);
-    string get_name() const ;
-    int get_size() const ;
-    int get_price() const ;
+    string get_name();
+    int get_size();
+    int get_price();
     void set_name(string name);
     void set_size(int size);
     void set_price(int price);
-   
     friend ostream& operator << (ostream& in, const Pizza& pizza);
-    
-    //void addTopping(Topping topping);
-    
-    //~Pizza();
-    
-    
+    friend istream& operator >> (istream& in, Pizza& pizza);
+
 };
 
 

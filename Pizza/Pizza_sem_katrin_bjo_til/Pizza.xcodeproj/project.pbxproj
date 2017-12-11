@@ -12,7 +12,6 @@
 		54496FC81FDB8DD0008E7248 /* Services.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54496FC61FDB8DD0008E7248 /* Services.cpp */; };
 		54496FCB1FDB8DE8008E7248 /* Repositories.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54496FC91FDB8DE8008E7248 /* Repositories.cpp */; };
 		546897DD1FD1973800B9836F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546897DC1FD1973800B9836F /* main.cpp */; };
-		546B6F771FD224290087F316 /* topping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546B6F751FD224290087F316 /* topping.cpp */; };
 		546B6F7A1FD2246F0087F316 /* pizza.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 546B6F781FD2246F0087F316 /* pizza.cpp */; };
 		548098AA1FD880BD005F6D24 /* AdminRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 548098A81FD880BD005F6D24 /* AdminRepository.cpp */; };
 /* End PBXBuildFile section */
@@ -40,8 +39,6 @@
 		54496FCA1FDB8DE8008E7248 /* Repositories.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Repositories.hpp; sourceTree = "<group>"; };
 		546897D91FD1973800B9836F /* Pizza */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pizza; sourceTree = BUILT_PRODUCTS_DIR; };
 		546897DC1FD1973800B9836F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		546B6F751FD224290087F316 /* topping.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = topping.cpp; sourceTree = "<group>"; };
-		546B6F761FD224290087F316 /* topping.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = topping.hpp; sourceTree = "<group>"; };
 		546B6F781FD2246F0087F316 /* pizza.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pizza.cpp; sourceTree = "<group>"; };
 		546B6F791FD2246F0087F316 /* pizza.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pizza.hpp; sourceTree = "<group>"; };
 		548098A81FD880BD005F6D24 /* AdminRepository.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdminRepository.cpp; sourceTree = "<group>"; };
@@ -92,8 +89,6 @@
 		5480989C1FD82963005F6D24 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				546B6F761FD224290087F316 /* topping.hpp */,
-				546B6F751FD224290087F316 /* topping.cpp */,
 				546B6F791FD2246F0087F316 /* pizza.hpp */,
 				546B6F781FD2246F0087F316 /* pizza.cpp */,
 			);
@@ -188,7 +183,6 @@
 			files = (
 				54496FCB1FDB8DE8008E7248 /* Repositories.cpp in Sources */,
 				54496FC81FDB8DD0008E7248 /* Services.cpp in Sources */,
-				546B6F771FD224290087F316 /* topping.cpp in Sources */,
 				54496FA61FD9F23C008E7248 /* Exceptions.cpp in Sources */,
 				548098AA1FD880BD005F6D24 /* AdminRepository.cpp in Sources */,
 				546897DD1FD1973800B9836F /* main.cpp in Sources */,

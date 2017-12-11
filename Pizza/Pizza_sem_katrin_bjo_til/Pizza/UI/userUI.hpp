@@ -20,12 +20,8 @@ public:
 private:
     void validate_user_input (char input);
     Services pizza_service;
-    
     Pizza create_pizza();
-    //Employee create_employee();
-    //Services employee_sevice;
-    //    Employee salarySSN();
-    
+  
     
 };
 

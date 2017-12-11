@@ -59,16 +59,16 @@ void UserUI::validate_user_input (char input){
     } */
 }
 Pizza UserUI::create_pizza(){
-    int number_of_toppings, size;
-    char crust;
-    cout << "how many toppings?" << endl;
-    cin >> number_of_toppings;
-    cout << "what type of crust?" << endl;
-    cin >> crust;
+    string name;
+    int size, price;
+    cout << "What pizza would you like?" << endl;
+    cin >> name;
     cout << "what size?" << endl;
     cin >> size;
+    cout << "what price?" << endl;
+    cin >> price;
     
-    Pizza pizza(number_of_toppings, crust, size);
+    Pizza pizza(name, size, price);
     return pizza;
 }
 
