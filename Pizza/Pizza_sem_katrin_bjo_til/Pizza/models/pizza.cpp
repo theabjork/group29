@@ -14,44 +14,59 @@
 using namespace std;
 
 Pizza::Pizza(){
-    _number_of_toppings = 0;
-    //_topping = NULL;
+    this->name = "";
+    this->size = 0;
+    this->price = 0;
 }
 
-Pizza::Pizza(int number_of_toppings, char crust, int size){
-    _number_of_toppings = number_of_toppings;
-    //_topping = new Topping[_topping_count];
-    
+Pizza:: Pizza(string name, int size, int price){
+    this->name = name;
+    this->size = size;
+    this->price = price;
 }
-int Pizza ::get_number_of_toppings() const {
+string Pizza ::get_name() const {
     
-    return _number_of_toppings;
-}
-char Pizza::get_crust() const {
-    
-    return _crust;
+    return this->name;
 }
 int Pizza::get_size() const {
     
-    return _size;
+    return this->size;
 }
-void Pizza::set_number_of_toppings(int number){
-    _number_of_toppings = number;
+int Pizza::get_price() const {
+    
+    return this->price;
+}
+void Pizza::set_name(string newname){
+    this->name = newname;
 }
 
-void Pizza::set_crust(char crust){
-    _crust = crust;
+void Pizza::set_size(int newsize){
+    this->size = newsize;
 }
 
-void Pizza::set_size(int size){
-    _size = size;
+void Pizza::set_price(int newprice){
+    this->price = newprice;
+    
 }
+
 
 ostream& operator << (ostream& out, const Pizza& pizza){
-    out << "Pizza with " << pizza._number_of_toppings << " toppings and ";
-    out << pizza._crust << " crust " << pizza._size << " inches ";
+    out << "Pizza: " << pizza.name << endl;
+    out << "Size: " << pizza.size << endl;
+    out << "Price: " << pizza.price << endl;
     
     return out;
+}
+
+istream& operator >> (istream& in, const Pizza& pizza){
+    cout << "Pizza: ";
+    in >> pizza.name << endl;
+    cout << "Size: ";
+    in >> pizza.size << endl;
+    cout << "Price: ";
+    in >> pizza.price << endl;
+    
+    return in;
 }
 
 

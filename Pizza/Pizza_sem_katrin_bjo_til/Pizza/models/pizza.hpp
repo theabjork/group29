@@ -16,20 +16,20 @@ using namespace std;
 class Pizza{
     
 private:
-    int _number_of_toppings;
-    char _crust;
-    int _size;
+    string name;
+    int size;
+    int price;
     
 
 public:
     Pizza();
-    Pizza(int number_of_toppings, char crust, int size);
-    int get_number_of_toppings() const ;
-    char get_crust() const ;
+    Pizza(string name, int size, int price);
+    string get_name() const ;
     int get_size() const ;
-    void set_number_of_toppings(int number);
-    void set_crust(char crust);
+    int get_price() const ;
+    void set_name(string name);
     void set_size(int size);
+    void set_price(int price);
    
     friend ostream& operator << (ostream& in, const Pizza& pizza);
     

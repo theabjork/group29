@@ -49,7 +49,6 @@ void Services::sales_menu_validate_input(char number){
     if(number == '1'){
         menu_repo.validate_menu_input(number);
     }
-    
 }
 
     

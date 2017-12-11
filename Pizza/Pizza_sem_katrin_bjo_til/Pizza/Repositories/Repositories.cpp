@@ -53,7 +53,7 @@ void Repositories:: read_from_file(){
     }
 }
 
-void Repositories:: parseString(string line){
+vector<string> Repositories:: parseString(string line){
 
         string property = "";
         vector<string> properties;
@@ -66,7 +66,7 @@ void Repositories:: parseString(string line){
                 property += line[i];
             }
         }
-    
+    return properties;
 }
 
 void Repositories::validate_menu_input(char number){
