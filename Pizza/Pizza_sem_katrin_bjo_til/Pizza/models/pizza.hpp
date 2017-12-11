@@ -18,7 +18,6 @@ private:
     string name;
     int size;
     int price;
-    
 
 public:
     Pizza();

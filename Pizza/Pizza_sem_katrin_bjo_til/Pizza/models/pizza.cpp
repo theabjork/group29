@@ -49,7 +49,6 @@ void Pizza::set_price(int newprice){
     
 }
 
-
 ostream& operator << (ostream& out, const Pizza& pizza){
     out << "Pizza: " << pizza.name << endl;
     out << "Size: " << pizza.size << endl;

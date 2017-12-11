@@ -60,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				546897DB1FD1973800B9836F /* Pizza */,
-				54496FA41FD9F23C008E7248 /* Exceptions.cpp */,
-				54496FA51FD9F23C008E7248 /* Exceptions.hpp */,
 				546897DA1FD1973800B9836F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +75,8 @@
 		546897DB1FD1973800B9836F /* Pizza */ = {
 			isa = PBXGroup;
 			children = (
+				54496FA41FD9F23C008E7248 /* Exceptions.cpp */,
+				54496FA51FD9F23C008E7248 /* Exceptions.hpp */,
 				546897DC1FD1973800B9836F /* main.cpp */,
 				5480989C1FD82963005F6D24 /* models */,
 				5480989D1FD829A5005F6D24 /* UI */,
