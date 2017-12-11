@@ -39,8 +39,7 @@ void UserUI::validate_user_input (char input){
     if(input == 's'){
         pizza_service.sales_options();
         pizza_service.add_pizza(create_pizza());
-        
-        
+
         
         /*Menu message;
         message.welcomeMessage();
@@ -59,10 +58,11 @@ void UserUI::validate_user_input (char input){
     } */
 }
 Pizza UserUI::create_pizza(){
+
     string name;
-    int size, price;
-    cout << "What pizza would you like?" << endl;
+    cout << "What pizza would you like?";
     cin >> name;
+    int size, price;
     cout << "what size?" << endl;
     cin >> size;
     cout << "what price?" << endl;
@@ -70,6 +70,7 @@ Pizza UserUI::create_pizza(){
     
     Pizza pizza(name, size, price);
     return pizza;
+  
 }
 
 
