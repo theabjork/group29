@@ -1,8 +1,17 @@
-#ifndef EXCEPTIONS_H
-#define EXCEPTIONS_H
+
+#ifndef Exceptions_hpp
+#define Exceptions_hpp
+
+#include <stdio.h>
+
+class invalidEmployeeException{};
+class invalidEmployeeSSN{};
+class invalidEmployeeSalary{};
+class invalidYear{};
+class invalidMonth{};
 
 
-class InvalidNameException{ };
-class InvalidSSNException{ };
 
-#endif // EXCEPTIONS_H
+
+
+#endif /* Exceptions_hpp */
