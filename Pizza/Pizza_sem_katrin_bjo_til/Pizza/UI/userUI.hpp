@@ -16,12 +16,16 @@ class UserUI {
     
 public:
     void main_menu();
+    Repositories pizza_repo;
+    void add_pizza(const Pizza& pizza);
+    void sales_options();
+    void sales_validate_user_input(char input);
     
 private:
     void validate_user_input (char input);
     Services pizza_service;
     Pizza create_pizza();
-  
+   
     
 };
 

@@ -20,6 +20,7 @@ private:
     int price;
 
 public:
+    
     Pizza();
     Pizza(string name, int size, int price);
     string get_name();

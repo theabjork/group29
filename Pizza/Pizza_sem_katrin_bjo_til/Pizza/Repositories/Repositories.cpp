@@ -74,7 +74,6 @@ void Repositories::validate_menu_input(char number){
     if(number == '1'){
         cout << properties[1] << endl;
     }
-    
 }
 
 
