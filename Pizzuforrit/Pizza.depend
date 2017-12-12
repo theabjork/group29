@@ -1,0 +1,241 @@
+# depslib dependency file v1.0
+1513010281 source:c:\users\thea\desktop\pizza\adminrepository.cpp
+	"AdminRepository.h"
+	<string>
+	<fstream>
+
+1513007929 c:\users\thea\desktop\pizza\adminrepository.h
+	<string>
+	<fstream>
+
+1512594581 source:c:\users\thea\desktop\pizza\adminservice.cpp
+	"AdminService.h"
+
+1512594568 c:\users\thea\desktop\pizza\adminservice.h
+
+1512594147 source:c:\users\thea\desktop\pizza\adminui.cpp
+	"AdminUI.h"
+	<fstream>
+	<string>
+	<iostream>
+
+1512594143 c:\users\thea\desktop\pizza\adminui.h
+	<fstream>
+	<stdio.h>
+
+1512996431 source:c:\users\thea\desktop\pizza\main.cpp
+	<iostream>
+	<string>
+	"manUI.h"
+	<fstream>
+
+1512594489 c:\users\thea\desktop\pizza\salesui.h
+	<iostream>
+	<string>
+	<fstream>
+
+1513017405 c:\users\thea\desktop\pizza\manui.h
+	<iostream>
+	"Pizza.h"
+	"SaleService.h"
+
+1513017084 source:c:\users\thea\desktop\pizza\manui.cpp
+	"manUI.h"
+
+1513010476 source:c:\users\thea\desktop\pizza\pizza.cpp
+	"Pizza.h"
+	<fstream>
+	<string>
+	<stddef.h>
+
+1513010476 c:\users\thea\desktop\pizza\pizza.h
+	"Repositories.h"
+	<iostream>
+	<fstream>
+	<vector>
+
+1512989959 c:\users\thea\desktop\pizza\topping.h
+	<string>
+	<iostream>
+	<stdio.h>
+
+1513016107 source:c:\users\thea\desktop\pizza\saleservice.cpp
+	"SaleService.h"
+
+1513017116 c:\users\thea\desktop\pizza\saleservice.h
+	"Pizza.h"
+	"Repositories.h"
+	<iostream>
+
+1512594465 source:c:\users\thea\desktop\pizza\salesui.cpp
+	"SalesUI.h"
+	"AdminUI.h"
+	<iostream>
+	<string>
+	<fstream>
+
+1512989984 source:c:\users\thea\desktop\pizza\topping.cpp
+	"Topping.h"
+	<iostream>
+	<string>
+
+1513009678 c:\users\thea\desktop\pizza\repositories.h
+	"Pizza.h"
+	<string>
+	<vector>
+
+1513015395 source:c:\users\thea\desktop\pizza\repositories.cpp
+	"Repositories.h"
+
+1513077262 source:c:\users\natal\desktop\pizza\adminrepository.cpp
+	"AdminRepository.h"
+	<string>
+	<fstream>
+
+1513077262 c:\users\natal\desktop\pizza\adminrepository.h
+	<string>
+	<fstream>
+
+1513077262 source:c:\users\natal\desktop\pizza\main.cpp
+	<iostream>
+	<string>
+	"manUI.h"
+	<fstream>
+
+1513099577 c:\users\natal\desktop\pizza\manui.h
+	<iostream>
+	"Pizza.h"
+	"Service.h"
+	"Exceptions.h"
+
+1513100715 c:\users\natal\desktop\pizza\pizza.h
+	<iostream>
+	<fstream>
+	<vector>
+
+1513100515 c:\users\natal\desktop\pizza\repositories.h
+	"Pizza.h"
+	<string>
+	<vector>
+	<sstream>
+
+1513095828 c:\users\natal\desktop\pizza\saleservice.h
+	"Pizza.h"
+	"Repositories.h"
+	<iostream>
+	"Exceptions.h"
+
+1513095074 source:c:\users\natal\desktop\pizza\pizza.cpp
+	"Pizza.h"
+	<fstream>
+	<string>
+	<stddef.h>
+
+1513095521 source:c:\users\natal\desktop\pizza\repositories.cpp
+	"Repositories.h"
+
+1513086081 source:c:\users\natal\desktop\pizza\exceptions.cpp
+	"Exceptions.h"
+
+1513090490 c:\users\natal\desktop\pizza\exceptions.h
+	<stdio.h>
+
+1513099123 source:c:\users\natal\desktop\pizza\manui.cpp
+	"manUI.h"
+
+1513085852 source:c:\users\natal\desktop\pizza\topping.cpp
+	"Topping.h"
+	<iostream>
+	<string>
+
+1513077263 c:\users\natal\desktop\pizza\topping.h
+	<string>
+	<iostream>
+	<stdio.h>
+
+1513099583 source:c:\users\natal\desktop\pizza\saleservice.cpp
+	"Service.h"
+	<string>
+
+1513095828 c:\users\natal\desktop\pizza\service.h
+	"Pizza.h"
+	"Repositories.h"
+	<iostream>
+	"Exceptions.h"
+
+1513099831 source:c:\users\natal\desktop\pizza\service.cpp
+	"Service.h"
+	<string>
+
+1513099123 source:c:\users\natal\desktop\pizza\userui.cpp
+	"manUI.h"
+
+1513095074 source:c:\users\natal\desktop\pizza\models\pizza.cpp
+	"Pizza.h"
+	<fstream>
+	<string>
+	<stddef.h>
+
+1513100610 c:\users\natal\desktop\pizza\models\pizza.h
+	<iostream>
+	<fstream>
+	<vector>
+
+1513106432 source:c:\users\natal\desktop\pizza\repository\repositories.cpp
+	"Repositories.h"
+
+1513106495 c:\users\natal\desktop\pizza\repository\repositories.h
+	"../Models/Pizza.h"
+	<string>
+	<vector>
+	<sstream>
+	"Product.h"
+
+1513106307 source:c:\users\natal\desktop\pizza\service\service.cpp
+	"Service.h"
+	<string>
+
+1513106333 c:\users\natal\desktop\pizza\service\service.h
+	"../Models/Pizza.h"
+	"../Repository/Repositories.h"
+	<iostream>
+	"../Exceptions.h"
+	"Product.h"
+
+1513107077 source:c:\users\natal\desktop\pizza\ui\userui.cpp
+	"UserUI.h"
+
+1513106059 c:\users\natal\desktop\pizza\ui\userui.h
+	<iostream>
+	"../Models/Pizza.h"
+	"../Service/Service.h"
+	"../Exceptions.h"
+	"Product.h"
+
+1513085852 source:c:\users\natal\desktop\pizza\models\topping.cpp
+	"Topping.h"
+	<iostream>
+	<string>
+
+1513077263 c:\users\natal\desktop\pizza\models\topping.h
+	<string>
+	<iostream>
+	<stdio.h>
+
+1513109338 source:c:\users\natal\desktop\pizza\repository\adminrepository.cpp
+	"AdminRepository.h"
+	<string>
+	<fstream>
+
+1513109628 c:\users\natal\desktop\pizza\repository\adminrepository.h
+	<string>
+	<fstream>
+
+1513105735 source:c:\users\natal\desktop\pizza\models\product.cpp
+	"Product.h"
+
+1513105665 c:\users\natal\desktop\pizza\models\product.h
+	<stdio.h>
+	<string>
+	<iostream>
+

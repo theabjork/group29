@@ -1,0 +1,12 @@
+Pizza with 0 toppings and  crust 4005888 inches Pizza with 1 toppings and  crust 2740224 inches Pizza: 2
+Size: 16
+Price: 2000kr.
+Pizza: margarita
+Size: 12
+Price: 2500kr.
+Pizza: margarita
+Size: 12
+Price: 2500kr.
+Pizza: pepperoni
+Size: 12
+Price: 2000kr.
