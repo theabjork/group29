@@ -10,6 +10,7 @@
 #define userUI_hpp
 #include "pizza.hpp"
 #include "Services.hpp"
+#include "New_product.hpp"
 #include <stdio.h>
 
 class UserUI {
@@ -20,10 +21,16 @@ public:
     void add_pizza(const Pizza& pizza);
     void sales_options();
     void sales_validate_user_input(char input);
+    void admin_options();
+    void validate_admin_input(char input);
+    void validate_user_input (char input);
+    Product product;
+    Product create_product();
     
 private:
-    void validate_user_input (char input);
+   
     Services pizza_service;
+    Services admin_services;
     Pizza create_pizza();
    
     

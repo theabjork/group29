@@ -6,7 +6,9 @@
 //  Copyright © 2017 Katrin Arnardottir. All rights reserved.
 //
 
+
 #include "Repositories.hpp"
+#include "New_product.hpp"
 #include <fstream>
 #include <string>
 using namespace std;
@@ -21,6 +23,18 @@ void Repositories::add_pizza(const Pizza& pizza){
     }
     else{
         ///trow errror
+    }
+}
+
+void Repositories::add_topping(const Topping& topping){
+    ofstream fout;
+    fout.open("Toppings.txt", ios::app);
+    if(fout.is_open()){
+        //fout << topping;
+        fout.close();
+    }
+    else{
+        ///throw error
     }
 }
 
@@ -74,6 +88,20 @@ void Repositories::validate_menu_input(char number){
     if(number == '1'){
         cout << properties[1] << endl;
     }
+}
+
+void Repositories::add_product(const Product& product){
+    ofstream fout;
+    fout.open("the_menu.txt", ios::app);
+    if(fout.is_open()){
+        //fout << product;
+        fout.close();
+        
+    }
+    else{
+        ///trow errror
+    }
+    
 }
 
 

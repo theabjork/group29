@@ -10,6 +10,7 @@
 #define Services_hpp
 #include "pizza.hpp"
 #include "Repositories.hpp"
+#include "New_product.hpp"
 #include <stdio.h>
 #include <iostream>
 using namespace std;
@@ -23,7 +24,9 @@ public:
 
     void sales_menu_validate_input(char number);
     Pizza pizza;
-    
+    void add_product(const Product& product);
+    Repositories menu_repo;
+    void read_menu();
     
     
     

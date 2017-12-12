@@ -8,13 +8,14 @@
 
 #include "userUI.hpp"
 #include "pizza.hpp"
+#include "New_product.hpp"
 #include "Services.hpp"
 #include <iostream>
 using namespace std;
 
 void UserUI:: main_menu(){
     
-    while(true){
+    //while(true){
     
     cout << "Welcome to FALL's Pizza" << endl << endl;
     char input = '\0';
@@ -25,9 +26,11 @@ void UserUI:: main_menu(){
     cout << "Press q to quit" << endl;
     cout << "Selection: ";
     cin >> input;
+    cout << endl;
+        
     validate_user_input (input);
         
-    }
+    //}
 }
 
 void UserUI::validate_user_input (char input){
@@ -35,6 +38,7 @@ void UserUI::validate_user_input (char input){
     if(input == 'a'){
        
         cout << "Hello Administrator" << endl;
+        admin_options();
     }
     if(input == 's'){
         
@@ -68,8 +72,7 @@ Pizza UserUI::create_pizza(){
     int size, price;
     cout << "what size?" << endl;
     cin >> size;
-    cout << "what price?" << endl;
-    cin >> price;
+
     
     Pizza pizza(name, size, price);
     return pizza;
@@ -96,8 +99,6 @@ void UserUI::sales_validate_user_input(char input){
         Pizza pizza;
         
         
-        
-        
         /*cout << "Choose a number from the menu?" << endl;
          char number;
          cin >> number;
@@ -109,6 +110,49 @@ void UserUI::sales_validate_user_input(char input){
     }
     
 }
+
+void UserUI::admin_options(){
+    
+    cout << "Press 2 to add a topping." << endl;
+    cout << "Press 3 to add a pizza to menu." << endl;
+    char input;
+    cin >> input;
+    validate_admin_input(input);
+    
+}
+void UserUI::validate_admin_input(char input){
+   
+     if(input == '2'){
+       
+     }
+     if(input == '3'){
+         admin_services.read_menu();
+         create_product();
+         
+         admin_services.add_product(create_product());
+     }
+}
+
+Product UserUI::create_product(){
+
+    string name;
+    int price12, price16, price32;
+    
+    cout << "Enter name of pizza: " << endl;
+    cin >> name;
+    cout << "Enter price for 12\": " << endl;
+    cin >> price12;
+    cout << "Enter price for 16\": " << endl;
+    cin >> price16;
+    cout << "Enter price for 32\": " << endl;
+    cin >> price32;
+    
+    Product product(name, price12, price16, price32);
+    
+    return product;
+ 
+}
+
 
 
 
