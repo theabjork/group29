@@ -13,7 +13,7 @@
 #include <stddef.h>
 using namespace std;
 
-Pizza::Pizza(){
+Pizza:: Pizza(){
     this->name = "";
     this->size = 0;
     this->price = 0;
@@ -52,7 +52,7 @@ void Pizza::set_price(int newprice){
 ostream& operator << (ostream& out, const Pizza& pizza){
     out << "Pizza: " << pizza.name << endl;
     out << "Size: " << pizza.size << endl;
-    out << "Price: " << pizza.price << endl;
+    out << "Price: " << pizza.price << "kr." << endl ;
     
     return out;
 }

@@ -37,8 +37,9 @@ void UserUI::validate_user_input (char input){
         cout << "Hello Administrator" << endl;
     }
     if(input == 's'){
-        pizza_service.sales_options();
-        pizza_service.add_pizza(create_pizza());
+        
+        sales_options();
+        add_pizza(create_pizza());
 
         
         /*Menu message;
@@ -46,10 +47,12 @@ void UserUI::validate_user_input (char input){
         Menu opt;
         opt.options();*/
     }
-    /*
-    if(selection == 'p'){
+    
+    if(input == 'p'){
+        
         
     }
+    /*
     if(selection == 'd'){
         
     }
@@ -58,10 +61,10 @@ void UserUI::validate_user_input (char input){
     } */
 }
 Pizza UserUI::create_pizza(){
-
+    
     string name;
-    cout << "What pizza would you like?";
-    cin >> name;
+    cout << "What pizza would you like?" << endl;
+    cin >> name; ///ATH MA EKKI EKKI GERA BIL I PIZZU!
     int size, price;
     cout << "what size?" << endl;
     cin >> size;
@@ -70,7 +73,41 @@ Pizza UserUI::create_pizza(){
     
     Pizza pizza(name, size, price);
     return pizza;
-  
+}
+
+
+void UserUI::add_pizza(const Pizza& pizza){
+    pizza_repo.add_pizza(pizza);  /// ATH a ad kalla a service ekki repo!!
+    cout << "Your order: " << endl;
+    cout << pizza << endl;
+}
+void UserUI::sales_options(){
+    
+    cout << "Press 1 to make order: " << endl;
+    cout << "Press 2 to change order: " << endl;
+    char input;
+    cin >> input;
+    sales_validate_user_input(input);
+}
+void UserUI::sales_validate_user_input(char input){
+    if(input == '1'){
+        Repositories sales_repo;
+        sales_repo.the_menu();
+        Pizza pizza;
+        
+        
+        
+        
+        /*cout << "Choose a number from the menu?" << endl;
+         char number;
+         cin >> number;
+         sales_menu_validate_input(number);
+         */
+    }
+    else {
+        cout << endl;
+    }
+    
 }
 
 
