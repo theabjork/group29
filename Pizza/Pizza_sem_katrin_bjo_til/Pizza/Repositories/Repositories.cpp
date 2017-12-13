@@ -94,9 +94,8 @@ void Repositories::add_product(const Product& product){
     ofstream fout;
     fout.open("the_menu.txt", ios::app);
     if(fout.is_open()){
-        //fout << product;
+        fout << product;
         fout.close();
-        
     }
     else{
         ///trow errror

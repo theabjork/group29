@@ -14,7 +14,7 @@ public:
     double get_price();
     void set_name(string name);
     void set_price(double price);
-    friend ostream& operator << (ostream& out, Topping& topping);
+    friend ofstream& operator << (ofstream& out, Topping& topping);
     friend istream& operator >> (istream& in, Topping& topping);
     
 private:

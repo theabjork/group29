@@ -24,12 +24,14 @@ public:
 
     void sales_menu_validate_input(char number);
     Pizza pizza;
+    Repositories pizza_repo;
     void add_product(const Product& product);
+    void add_pizza(const Pizza& pizza);
     Repositories menu_repo;
     void read_menu();
     
-    
-    
+    bool validatePizza(Pizza pizza);
+
 };
 
 #endif /* Services_hpp */

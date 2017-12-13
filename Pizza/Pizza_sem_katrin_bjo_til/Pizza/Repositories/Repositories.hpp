@@ -30,6 +30,7 @@ public:
     vector<string> parseString(string line);
     void validate_menu_input(char number);
     void add_product(const Product& product);
+    
 };
 
 

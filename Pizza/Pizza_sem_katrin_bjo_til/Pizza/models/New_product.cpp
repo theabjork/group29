@@ -8,6 +8,7 @@
 
 #include "New_product.hpp"
 
+
 Product::Product() {
     this->name = "";
     this->price12 = 0;
@@ -65,15 +66,12 @@ istream& operator >> ( istream& in, Product& product) {
     return in;
 }
 
-ostream& operator << ( ostream& out, Product& product) {
+ofstream& operator << ( ofstream& fout, const Product& product) {
     
    
-    out << "name of product: " << product.name << endl;
-    out << "price for 12\": " << product.price12 << endl;
-    out << "price for 16\": " << product.price16 << endl;
-    out << "price for 32\": " << product.price32 << endl;
+    fout << product.name << "\t"<< product.price12 << "  "<< product.price16 << "  "<< product.price32 << endl;
     
-    return out;
+    return fout;
 }
 
 

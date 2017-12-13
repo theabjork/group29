@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+class invalidPizzaName{};
+class invalidPizzaSize{};
+class invalidPizzaPrice{};
+class invalidPizzaLocation{};
+
+
+
 #endif /* Exceptions_hpp */

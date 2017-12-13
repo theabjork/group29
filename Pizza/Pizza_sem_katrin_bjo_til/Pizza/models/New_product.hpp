@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <string>
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 
@@ -35,8 +36,10 @@ public:
     void set_price16(int price16);
     void set_price32(int price32);
     friend istream& operator >> ( istream& in, Product& product);
-    friend ostream& operator << ( ostream& out, Product& product);
-
+    friend ofstream& operator << ( ofstream& fout, const Product& product);
+    
+    
+    
 };
 
 

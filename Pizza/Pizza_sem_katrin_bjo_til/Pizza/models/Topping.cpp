@@ -34,12 +34,12 @@ void Topping::set_price(double price){
     this->price = price;
 }
 
-ostream& operator << (ostream& out, Topping& topping){
+ofstream& operator << (ofstream& fout, Topping& topping){
     
-    out << topping.name;
-    out << topping.price;
+    fout << topping.name;
+    fout << topping.price;
     
-    return out;
+    return fout;
 }
 
 istream& operator >> (istream& in, Topping& topping){

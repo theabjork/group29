@@ -9,6 +9,7 @@
 #include "Services.hpp"
 #include <iostream>
 #include "pizza.hpp"
+#include "Exceptions.hpp"
 using namespace std;
 Services:: Services(){
     
@@ -19,6 +20,11 @@ void Services::read_menu(){
     menu_repo.the_menu();
     
 }
+void Services::add_pizza(const Pizza& pizza){
+        pizza_repo.add_pizza(pizza);
+    
+}
+
 void Services::sales_menu_validate_input(char number){
    
    
@@ -31,9 +37,16 @@ void Services::sales_menu_validate_input(char number){
 void Services:: add_product(const Product& product){
     menu_repo.add_product(product);
     
-    
 }
-
+bool Services::validatePizza(Pizza pizza){
+    string name = pizza.get_name();
+    for (unsigned int i = 0; i < name.length(); i++){
+        if(!isalpha(name[i])){
+            throw invalidPizzaName();
+        }
+    }
+    return true;
+}
 
     
     

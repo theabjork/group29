@@ -66,21 +66,22 @@ void UserUI::validate_user_input (char input){
 }
 Pizza UserUI::create_pizza(){
     
-    string name;
+    string name, location;
     cout << "What pizza would you like?" << endl;
     cin >> name; ///ATH MA EKKI EKKI GERA BIL I PIZZU!
     int size, price;
     cout << "what size?" << endl;
     cin >> size;
-
+    cout << "what location:" << endl;
+    cin >> location;
     
-    Pizza pizza(name, size, price);
+    Pizza pizza(name, size, price, location);
     return pizza;
 }
 
 
 void UserUI::add_pizza(const Pizza& pizza){
-    pizza_repo.add_pizza(pizza);  /// ATH a ad kalla a service ekki repo!!
+    pizza_service.add_pizza(pizza);
     cout << "Your order: " << endl;
     cout << pizza << endl;
 }
@@ -113,8 +114,8 @@ void UserUI::sales_validate_user_input(char input){
 
 void UserUI::admin_options(){
     
-    cout << "Press 2 to add a topping." << endl;
-    cout << "Press 3 to add a pizza to menu." << endl;
+    cout << "Press 1 to add a pizza to menu." << endl;
+    cout << "Press 2 to add a topping" << endl;
     char input;
     cin >> input;
     validate_admin_input(input);
@@ -122,14 +123,14 @@ void UserUI::admin_options(){
 }
 void UserUI::validate_admin_input(char input){
    
-     if(input == '2'){
-       
-     }
-     if(input == '3'){
+     if(input == '1'){
          admin_services.read_menu();
          create_product();
          
          admin_services.add_product(create_product());
+     }
+     if(input == '2'){
+     
      }
 }
 
@@ -150,7 +151,6 @@ Product UserUI::create_product(){
     Product product(name, price12, price16, price32);
     
     return product;
- 
 }
 
 

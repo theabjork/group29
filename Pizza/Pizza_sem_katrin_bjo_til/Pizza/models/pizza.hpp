@@ -17,18 +17,21 @@ class Pizza{
 private:
     string name;
     int size;
-    int price;
+    string price;
+    string location;
 
 public:
     
     Pizza();
-    Pizza(string name, int size, int price);
+    Pizza(string name, int size, int price, string location);
     string get_name();
     int get_size();
-    int get_price();
+    string get_price();
+    string get_location();
     void set_name(string name);
     void set_size(int size);
-    void set_price(int price);
+    void set_price(string price);
+    void set_location(string newlocation);
     friend ostream& operator << (ostream& in, const Pizza& pizza);
     friend istream& operator >> (istream& in, Pizza& pizza);
 
