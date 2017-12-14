@@ -24,8 +24,9 @@ private:
     
 public:
     void add_pizza(const Pizza& pizza);
-    void add_topping(const Topping& topping);
+    void add_topping(vector<Topping> topping_list);
     void the_menu();
+    void topping_menu();
     void read_from_file();
     vector<string> parseString(string line);
     void validate_menu_input(char number);

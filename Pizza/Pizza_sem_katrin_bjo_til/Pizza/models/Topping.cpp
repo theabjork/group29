@@ -4,46 +4,48 @@
 #include <string>
 #include <stddef.h>
 #include <fstream>
+#include <vector>
 using namespace std;
 
 
-Topping::Topping(){
+Topping:: Topping(){
+    
     
 }
 
-Topping::Topping(string name, double price){
+Topping:: Topping(string name, int price){
     
     this->name = name;
     this->price = price;
 }
 
-string Topping::get_name(){
-    
-    return this->name;
+
+string Topping::get_name() const{
+    return this-> name;
 }
-double Topping::get_price() {
-    
+
+int Topping::get_price()const{
     return this->price;
 }
 
-void Topping::set_name(string name){
-    this->name = name;
+ostream& operator << (ostream& out, vector<Topping>& topping_list){
+    for (unsigned int i = 0; i < topping_list.size(); i++)
+    {
+        out << "Name of topping  : " << topping_list[i].get_name() << endl;
+        out << "Price: " << topping_list[i].get_price() << endl;
+    }
+    return out;
 }
 
-void Topping::set_price(double price){
-    this->price = price;
-}
 
-ofstream& operator << (ofstream& fout, Topping& topping){
-    
-    fout << topping.name;
-    fout << topping.price;
-    
-    return fout;
-}
 
-istream& operator >> (istream& in, Topping& topping){
+istream& operator >> (istream& in, vector<Topping>& topping_list)
+{
+    int number_of_toppings;
+    cout << "How many toppings: ";
+    in >> number_of_toppings;
     
-    in >> topping.name >> topping.price;
+    //topping_list.push_back(number_of_toppings);
+
     return in;
 }

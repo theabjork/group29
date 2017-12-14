@@ -1,1 +1,9 @@
 
+Pizza: asljga
+Size: 32
+Price: ÿkr.
+Locationhofda
+Pizza: abbubbubu
+Size: 12
+Price: ÿkr.
+Locationgrafarvogur

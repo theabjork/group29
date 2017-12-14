@@ -27,9 +27,10 @@ public:
     Repositories pizza_repo;
     void add_product(const Product& product);
     void add_pizza(const Pizza& pizza);
+    void add_topping(vector<Topping> topping_list);
     Repositories menu_repo;
     void read_menu();
-    
+    void read_topping_menu();
     bool validatePizza(Pizza pizza);
 
 };

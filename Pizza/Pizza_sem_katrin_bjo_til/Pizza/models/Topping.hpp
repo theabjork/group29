@@ -1,6 +1,7 @@
 #ifndef TOPPING_H
 #define TOPPING_H
 #include <iostream>
+#include <vector>
 
 
 using namespace std;
@@ -9,17 +10,20 @@ class Topping{
     
 public:
     Topping();
-    Topping(string name, double price);
-    string get_name();
-    double get_price();
-    void set_name(string name);
-    void set_price(double price);
-    friend ofstream& operator << (ofstream& out, Topping& topping);
-    friend istream& operator >> (istream& in, Topping& topping);
+    Topping(string name, int price);
+
+    int get_price();
+
+    void set_price(int price);
+    friend ostream& operator << (ostream& out, vector<Topping>& topping_list);
+    friend istream& operator >> (ostream& out, vector<Topping>& topping_list);
+    int get_price() const;
+    string get_name() const;
     
 private:
+   
     string name;
-    double price;
+    int price;
     
     
     

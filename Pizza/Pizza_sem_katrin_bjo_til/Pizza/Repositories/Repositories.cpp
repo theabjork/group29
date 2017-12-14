@@ -26,11 +26,11 @@ void Repositories::add_pizza(const Pizza& pizza){
     }
 }
 
-void Repositories::add_topping(const Topping& topping){
+void Repositories::add_topping(vector<Topping> topping_list){
     ofstream fout;
-    fout.open("Toppings.txt", ios::app);
+    fout.open("topping_menu.txt", ios::app);
     if(fout.is_open()){
-        //fout << topping;
+        fout << topping_list;
         fout.close();
     }
     else{
@@ -43,6 +43,20 @@ void Repositories:: the_menu(){
     ifstream fin;
     string text;
     fin.open("the_menu.txt");
+    if(fin.is_open()){
+        while(!fin.eof()){
+            getline(fin,text);
+            cout << text << endl;
+        }
+        fin.eof();
+    }
+    fin.close();
+}
+void Repositories:: topping_menu(){
+    
+    ifstream fin;
+    string text;
+    fin.open("topping_menu.txt");
     if(fin.is_open()){
         while(!fin.eof()){
             getline(fin,text);
@@ -100,7 +114,6 @@ void Repositories::add_product(const Product& product){
     else{
         ///trow errror
     }
-    
 }
 
 

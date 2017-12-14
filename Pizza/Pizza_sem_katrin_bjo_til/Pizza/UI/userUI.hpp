@@ -11,7 +11,9 @@
 #include "pizza.hpp"
 #include "Services.hpp"
 #include "New_product.hpp"
+#include "Topping.hpp"
 #include <stdio.h>
+#include <vector>
 
 class UserUI {
     
@@ -25,6 +27,8 @@ public:
     void validate_user_input (char input);
     Product product;
     Product create_product();
+    //Topping create_topping();
+    vector<Topping> topping_list;
     
 private:
    

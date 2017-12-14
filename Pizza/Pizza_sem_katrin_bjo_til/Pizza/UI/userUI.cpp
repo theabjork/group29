@@ -130,9 +130,23 @@ void UserUI::validate_admin_input(char input){
          admin_services.add_product(create_product());
      }
      if(input == '2'){
-     
+         admin_services.read_topping_menu();
+         //create_topping();
+         //admin_services.add_topping(create_topping());
      }
 }
+/*Topping UserUI::create_topping(){ /////ATH!!! VIRKAR ALLS EKKI RETT!
+    int how_many;
+    vector<Topping> topping_list;
+    cout << "How many toppings would you like to add: ";
+    cin >> how_many;
+    for(int i = 0; i < how_many; i++){
+        cin >> topping_list[i];
+    }
+    
+    return topping_list;
+
+}*/
 
 Product UserUI::create_product(){
 

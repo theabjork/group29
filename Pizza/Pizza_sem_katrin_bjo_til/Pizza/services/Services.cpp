@@ -15,18 +15,23 @@ Services:: Services(){
     
     
 }
-
 void Services::read_menu(){
     menu_repo.the_menu();
+    
+}
+void Services::read_topping_menu(){
+    menu_repo.topping_menu();
     
 }
 void Services::add_pizza(const Pizza& pizza){
         pizza_repo.add_pizza(pizza);
     
 }
-
+void Services::add_topping(vector<Topping> topping_list){
+    menu_repo.add_topping(topping_list);
+    
+}
 void Services::sales_menu_validate_input(char number){
-   
    
     menu_repo.read_from_file();
     if(number == '1'){
